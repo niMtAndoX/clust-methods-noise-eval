@@ -1,0 +1,108 @@
+{
+  "config": {
+    "n_samples": 1000,
+    "centers": 3,
+    "n_features": 10,
+    "cluster_std": 1.0,
+    "random_state": 42,
+    "noise_levels": [
+      10,
+      20,
+      30
+    ],
+    "methods": [
+      "kmeans",
+      "hierarchisch",
+      "dbscan",
+      "rtkm"
+    ],
+    "repetitions": 20,
+    "kmeans_n_init": 20,
+    "kmeans_init": "k-means++",
+    "n_clusters": 3,
+    "hierarchical_linkage": "ward",
+    "pca_random_state": 42,
+    "dbscan_reference_seed": 2026,
+    "rtkm_alpha_by_level": {
+      "10": 0.091,
+      "20": 0.167,
+      "30": 0.231
+    },
+    "intercluster_margin_preprocessing": {
+      "k": 3,
+      "kmeans_init": "k-means++",
+      "kmeans_n_init": 20,
+      "calibration_random_state": 42,
+      "quantile": 0.01,
+      "epsilon": 1e-12
+    }
+  },
+  "repeat_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "dbscan_parameter_pro_dimensionalitaet": [
+    {
+      "dimensionalitaet": 10,
+      "eps": 1.3046433655952605,
+      "min_samples": 20,
+      "knee_index": 996
+    },
+    {
+      "dimensionalitaet": 11,
+      "eps": 1.8240452137509937,
+      "min_samples": 22,
+      "knee_index": 995
+    },
+    {
+      "dimensionalitaet": 12,
+      "eps": 2.5347615887032906,
+      "min_samples": 24,
+      "knee_index": 998
+    },
+    {
+      "dimensionalitaet": 13,
+      "eps": 2.8946620795305518,
+      "min_samples": 26,
+      "knee_index": 997
+    }
+  ],
+  "intercluster_margin_kalibrierung": {
+    "quantile": 0.01,
+    "margin_threshold": 0.7371627120369154,
+    "k": 3,
+    "kmeans_init": "k-means++",
+    "kmeans_n_init": 20,
+    "calibration_random_state": 42,
+    "epsilon": 1e-12,
+    "clean_margin_min": 0.5445265042341396,
+    "clean_margin_q01": 0.7371627120369154,
+    "clean_margin_median": 0.9159932799620563,
+    "clean_margin_max": 0.9852730823791337
+  },
+  "package_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  }
+}
